@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Asap&family=Audiowide&family=Lemon&family=Nunito&family=Protest+Revolution&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+
+
+
+@media (max-width: 808px) {
+    
+    header {
+        position: fixed;
+        background: #fff;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        height: 18px;
+        box-shadow: 0px 0px 10px #000;
+    }
+    
+    header > .barsdesktop {
+        display: none;
+    }
+    
+    header > .headermenu {
+        
+    }
+    
+    header > .headermenu > .barsbut {
+        float: left;
+        font-size: 20px;
+        color: #000;
+        
+    }
+    
+    header > .headermenu > img {
+        position: relative;
+        width: 180px;
+        top: -8px;
+    }
+    
+    header > .headermenu > .whatsappbut {
+        float: right;
+        margin-right: 25px;
+        font-size: 20px;
+        color: #000;
+        cursor: none;
+        transition: 1s;
+    }
+    
+    header > .headermenu > .whatsappbut:hover {
+        transform: scale(0.9);
+    }
+    
+    header > .sidebarnav {
+        position: fixed;
+        background: #222222;
+        top: 0;
+        left: 0;
+        float: left;
+        width: 0px;
+        height: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        opacity: 1;
+        transition: 1s;
+    }
+    
+    header > .sidebarnav > p {
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Lemon', serif;
+        margin: 10px;
+    }
+    
+    header > .sidebarnav > a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        margin: 10px;
+        cursor: none;
+        padding: 7px 5px;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    
+    header > .sidebarnav > a:hover {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Nunito', sans-serif;
+        margin: 10px;
+        cursor: none;
+        background: #ffffff7d;
+        padding: 7px 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    
+    header > .sidebarnav > .menuheader {
+        dislay: block;
+        margin-bottom: 50px;
+        padding: 10px;
+        width: 90%;
+    }
+    
+    header > .sidebarnav > .menuheader > a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        cursor: none;
+        padding: 7px 5px;
+        margin-top: 10px;
+        transition: 1s;
+    }
+    
+    .finalpart {
+        width: 95%;
+        height: 50px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin-top: 50px;
+        display: none;
+    }
+    
+    .finalpart > p {
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .data-item {
+        width: 85%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);     
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 10px;
+        overflow: scroll;
+    }
+    
+    .data-item > img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .data-item > h2 {
+        font-size: 20px;
+        float: left;
+        text-align: left;
+    }
+    
+    .data-item > p {
+        font-size: 10px;
+        font-family: arial ;
+        float: left;
+        text-align: left;
+    }
+    
+    .jabatanadmin {
+        box-shadow: 0px 0px 10px #000;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 70%;
+        overflow: scroll;
+    }
+    
+    .jabatanadmin > div {
+        display: block;
+        background-color: #1255de;
+        border: 2px solid #1255de40;
+        border-radius: 10px;
+        padding: 10px 0px;
+        width: 100%;
+        height: 45px;
+        margin-top: 10px;
+    }
+    
+    .jabatanadmin > div > p {
+        display: inline-block;
+        font-size: 15px;
+        margin-right: 10%;
+        font-family: 'Asap', sans-serif;
+    }
+    
+    .reportdiv {
+        box-shadow: 0px 0px 10px #000;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 70%;
+        overflow: scroll;
+    }
+    
+    .reportdiv > form > .namaform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .emailform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .fileform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin-top: 10px;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        font-family: 'Lemon', serif;
+    }
+    
+    #preview img {
+        max-width: 150px;
+        max-height: 300px;
+        margin-top: 50px;
+        border: 2px solid #000;
+    }
+    
+    .reportdiv > form > .textareaform {
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .submitform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+        background: #000;
+        color: #fff;
+        font-family: 'Lemon', serif;
+    }
+    
+    .listgame {
+        width: 95%;
+        height: 75%;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    .listgame > h1 {
+        color: #000;
+        font-size: 30px;
+        font-family: 'Lemon', serif;
+        margin: 10px;
+    }    
+    
+    .gamemenu {
+        width: 95%;
+        height: 100px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    .gamemenu > h1 {
+        font-size: 15px;
+        color: #000;
+        font-family: 'Audiowide', sans-serif;
+    }
+    
+    .gamemenu > button {
+        background-color: #3c3c3c;
+        border-radius: 10px;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .sambutan {
+        margin-top: 15px;
+    }
+    
+    .sambutan > img {
+        width: 100%;
+    }
+    
+    .sambutan > h1 {
+        font-size: 15px;
+        color: #000;
+        font-family: 'Audiowide', sans-serif;
+        margin-left: 5px;
+    }
+    
+    .sambutan > p {
+        font-family: 'Nunito', sans-serif;
+        color: #000;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+@media (min-width: 808px) {
+    
+    header {
+        position: fixed;        
+        background: #fff;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100%;
+        height: 18px;
+        filter: drop-shadow(0px 0px 5px #000);
+        z-index: 1000;
+    }
+    
+    header > .headermenu,
+    header > .sidebarnav {
+        display: none;
+    }
+    
+    header > .barsdesktop {
+        user-select: none;
+    }
+    
+    .barsdesktop > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .barsdesktop > ul > li {
+        display: inline;
+        margin: 0 2% 0 2%;
+    }
+    
+    .barsdesktop > ul > img {
+        display: inline;
+        position: relative;
+        float: left;
+        top: -10px;
+        margin-left: 10px;
+        width: 160px;
+        transition: 1s;
+    }
+    
+    .barsdesktop > ul > h1:hover {
+        display: inline;
+        position: relative;
+        float: left;
+        font-size: 20px;
+        top: -15px;
+        margin-left: 10px;
+        transform: scale(0.9);
+        transition: 1s;
+     }
+     
+    .barsdesktop > ul > li > a {
+        color: #000;
+        text-decoration: none;
+        cursor: none;
+        justify-content: space-between;
+        position: relative;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .barsdesktop > ul > li > a::before,
+    .barsdesktop > ul > li > a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #000000;
+        transition: width 2s ease;
+        animation: changeColor 7s infinite;
+    }
+     
+    .barsdesktop > ul > li > a::before {
+        left: 50%;
+        transform-origin: left;
+    }
+    
+    .barsdesktop > ul > li > a::after {
+        right: 50%;
+        transform-origin: right;
+    }
+    
+    .barsdesktop > ul > li > a:hover::before,
+    .barsdesktop > ul > li > a:hover::after {
+        width: 50%;
+    }
+    
+    .finalpart {
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin-top: 50px;
+        display: none;
+    }
+    
+    .finalpart > p {
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .data-item {
+        width: 90%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;                
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin: 20px;
+    }
+    
+    .data-item > img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .data-item > h2 {
+        font-size: 20px;
+        float: left;
+        text-align: left;
+    }
+    
+    .data-item > p {
+        font-size: 10px;
+        font-family: arial ;
+        float: left;
+        text-align: left;
+    }
+    
+    .jabatanadmin {
+        box-shadow: 0px 0px 10px #000;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        margin-top: 120px;
+        padding: 10px;
+        width: 80%;
+        height: 70%;
+        overflow: scroll;
+    }
+    
+    .jabatanadmin > div {
+        display: block;
+        background-color: #1255de;
+        border: 2px solid #1255de40;
+        border-radius: 10px;
+        padding: 10px 0px;
+        width: 100%;
+        height: 45px;
+        margin-top: 10px;
+    }
+    
+    .jabatanadmin > div > p {
+        display: inline-block;
+        font-size: 15px;
+        margin-right: 10%;
+        font-family: 'Asap', sans-serif;
+    }
+    
+    .reportdiv {
+        box-shadow: 0px 0px 10px #000;
+        color: #fff;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        width: 80%;
+        height: 70%;
+        overflow: scroll;
+    }
+    
+    .reportdiv > form > .namaform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .emailform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .fileform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin-top: 10px;
+        border-radius: 10px;
+        background: #000;
+        color: #fff;
+        font-family: 'Lemon', serif;
+    }
+    
+    #preview img {
+        max-width: 150px;
+        max-height: 300px;
+        margin-top: 50px;
+        border: 2px solid #000;
+    }
+    
+    .reportdiv > form > .textareaform {
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+    }
+    
+    .reportdiv > form > .submitform {
+        width: 90%;
+        padding: 10px;
+        border: 2px solid #2d2d2d;
+        margin: 10px;
+        border-radius: 10px;
+        outline: none;
+        background: #000;
+        color: #fff;
+        font-family: 'Lemon', serif;
+    }
+    
+    .listgame {
+        width: 95%;
+        height: 75%;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    .listgame > h1 {
+        color: #000;
+        font-size: 30px;
+        font-family: 'Lemon', serif;
+        margin: 10px;
+    }    
+    
+    .gamemenu {
+        width: 95%;
+        height: 100px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px #000;
+        margin: 30px;
+        border-radius: 10px;
+    }
+    
+    .gamemenu > h1 {
+        font-size: 15px;
+        color: #000;
+        font-family: 'Audiowide', sans-serif;
+    }
+    
+    .gamemenu > button {
+        background-color: #3c3c3c;
+        border-radius: 10px;
+        color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+    
+    .sambutan {
+        margin-top: 15px;
+    }
+    
+    .sambutan > img {
+        width: 100%;
+    }
+    
+    .sambutan > h1 {
+        font-size: 15px;
+        color: #000;
+        font-family: 'Audiowide', sans-serif;
+        text-align: left;
+        margin-left: 5px;
+    }
+    
+    .sambutan > p {
+        font-family: 'Nunito', sans-serif;
+        color: #000;
+        font-size: 10px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    
+    
+    
+}

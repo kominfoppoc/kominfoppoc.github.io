@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Lembaga Kominfo PPOC">
+    <meta property="og:description" content="Ini adalah website resmi website resmi Lembaga Kominfo PPOC -home">
+    <meta property="og:image" content="logo3.png">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55100b01de.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    
+    <header>
+        <div class="headermenu">
+            <a class="barsbut" id="opennavigasi"><i id="buttonsidebari" class="fa fa-bars"></i></a>
+            <img src="logo2.png" alt="Logo">
+            <a href="https://chat.whatsapp.com/H0twEacfDpC3kfW33zX0HS" class="whatsappbut"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <div id="sidebarnav" class="sidebarnav">
+            <div id="menuheader" class="menuheader">
+                <a id="closenavigasi" style="float: left; font-size: 20px;"><i class="fa fa-times"></i></a>
+                <a style="float: right;"><i class="fa fa-exclamation-circle"></i></a>
+            </div>
+            <p>LKPPOC</p>
+            <a href="home.html"><i class="fa fa-home"></i> Home</a>
+            <a href="rules.html"><i class="fa fa-scroll"></i> Rules</a>
+            <a href="admin.html"><i class="fa fa-person"></i> Admin</a>
+            <a href="news.html"><i class="fa fa-newspaper"></i> News</a>
+            <a href="event.html"><i class="fa fa-calendar-day"></i> Event</a>
+            <a href="game.html"><i class="fa fa-gamepad"></i> Games</a>
+        </div>
+        <div class="barsdesktop">
+            <ul>
+                <img src="logo2.png" alt="Logo">
+                <li><a href="home.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="rules.html"><i class="fa fa-scroll"></i> Rules</a></li>
+                <li><a href="admin.html"><i class="fa fa-person"></i> Admin</a></li>
+                <li><a href="news.html"><i class="fa fa-newspaper"></i> News</a></li>
+                <li><a href="event.html"><i class="fa fa-calendar-day"></i> Event</a></li>
+                <li><a href="game.html"><i class="fa fa-gamepad"></i> Games</a></li>
+                <li><a><i class="fa fa-exclamation-circle"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    
+    <div class="reportdiv">
+        <h1 style="color: #000; font-family: 'Audiowide', sans-serif;">Menu Report</h1>
+        <p style="font-size: 10px; color: #000; font-family: 'Nunito', sans-serif;">Ingat jangan menggunakan menu ini untuk hal yang tidak baik, ini hanya untuk mereport saja contohnya jika ada bug pada web atau repost masalah pada komunitas ppoc</p>
+        <form action="https://formspree.io/f/xdoqeqaa" method="POST">
+            <input class="namaform" type="text" name="nama" placeholder="Masukkan Nama...">
+            <input class="emailform" type="email" name="emailform" placeholder="Masukkan Email...">
+            <p style="font-size: 10px; color: #000; font-family: 'Nunito', sans-serif;">Pilih Gambar, ingat mengirim repost tidak harus menggunakan file ini not important, Pilih File File Harus Berupa Gambar!</p>
+            <label for="file-input" class="fileform">Pilih Gambar</label>
+            <input style="display: none;" type="file" id="file-input" name="file" accept="image/*" onchange="previewImage(event)">
+           <div id="preview"> </div>
+            <textarea class="textareaform" name="textareaform" placeholder="Detail Masalah..."></textarea>
+            <input class="submitform" onclick="window.location.href='sukses.html'" type="submit" value="submit">
+        </form>
+    </div>
+    
+    
+    
+    
+    
+     <section class="finalpart">
+         <p>©KominfoPPOC2024</p>
+     </section>
+     
+     <script>
+         function previewImage(event) {
+            var reader = new FileReader();
+            reader.onload = function() {
+                var preview = document.getElementById('preview');
+                var image = document.createElement('img');
+                image.src = reader.result;
+                preview.innerHTML = '';
+                preview.appendChild(image);
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        }
+     </script>
+</body>
+</html>

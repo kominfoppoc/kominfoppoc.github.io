@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data dari CSV</title>
+    <style>
+        .data-item {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex; /* Menggunakan flexbox */
+            flex-direction: column; /* Menata elemen anak dalam kolom */
+        }
+
+        .data-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .data-item h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .data-item p {
+            font-size: 14px;
+            line-height: 1.6;
+            flex-grow: 1; /* Membuat teks mengisi ruang yang tersedia */
+        }
+    </style>
+</head>
+<body>
+
+<div id="data-container"></div>
+
+<script>
+    const link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTz36lLHwAPx_VRyyZLqGdvlU70Nxmi_-U3VQWZTcpD-tyZ5zC0WsIR1TubV-L9bPC--I77qejcQ4Fu/pub?output=tsv';
+
+fetch(link)
+    .then(response => response.text())
+    .then(data => {
+        const rows = data.split('\n').map(row => row.split('\t')); // Menggunakan '\t' sebagai pemisah kolom
+        const container = document.getElementById('data-container');
+
+        rows.forEach(row => {
+            const div = document.createElement('div');
+            div.classList.add('data-item');
+
+            const imageSrc = row[0] || ''; // Assuming the first column contains image URLs
+            const title = row[1] || '';    // Assuming the second column contains titles
+            const text = row[2] || '';     // Assuming the third column contains text
+
+            if (imageSrc) {
+                const img = document.createElement('img');
+                img.src = imageSrc;
+                div.appendChild(img);
+            }
+
+            if (title) {
+                const h2 = document.createElement('h2');
+                h2.textContent = title;
+                div.appendChild(h2);
+            }
+
+            if (text) {
+                const p = document.createElement('p');
+                p.textContent = text;
+                div.appendChild(p);
+            }
+
+            container.appendChild(div);
+        });
+    });
+</script>
+
+</body>
+</html>
